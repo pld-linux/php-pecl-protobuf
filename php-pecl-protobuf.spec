@@ -6,7 +6,7 @@
 Summary:	Google's language-neutral, platform-neutral, extensible mechanism for serializing structured data
 Name:		%{php_name}-pecl-%{modname}
 Version:	3.22.5
-Release:	1
+Release:	2
 License:	BSD
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
@@ -46,7 +46,6 @@ grep %{modname} modules.log
 export NO_INTERACTION=1 REPORT_EXIT_STATUS=1 MALLOC_CHECK_=2
 %{__make} test \
 	PHP_EXECUTABLE=%{__php} \
-	PHP_TEST_SHARED_SYSTEM_EXTENSIONS="pcre spl"
 %endif
 
 %install
