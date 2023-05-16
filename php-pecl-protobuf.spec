@@ -13,7 +13,7 @@ Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
 # Source0-md5:	4bac21850c210567048780a625d32b26
 URL:		http://pecl.php.net/package/protobuf/
 %{?with_tests:BuildRequires:    %{php_name}-cli}
-BuildRequires:	%{php_name}-devel >= 4:5.5
+BuildRequires:	%{php_name}-devel >= 4:7.0
 BuildRequires:	protobuf-devel
 BuildRequires:	rpmbuild(macros) >= 1.666
 %if %{with tests}
